@@ -1,5 +1,3 @@
-/* ENSIGN rights */
-
 #include <float.h>
 #include <math.h>
 #include <stdint.h>
@@ -71,7 +69,7 @@ int are_close_double(double actual, double expected) {
 }
 
 //-----------------------------------------------------------------------------
-// assert
+// check
 //-----------------------------------------------------------------------------
 bool check(double actual, double expected, char *desc, bool condition) {
     total_checks++;

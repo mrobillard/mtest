@@ -1,5 +1,3 @@
-/* ENSIGN rights */
-
 #ifndef TEST_UTIL_H__
 #define TEST_UTIL_H__
 
