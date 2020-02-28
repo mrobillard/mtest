@@ -53,10 +53,6 @@ void test_runner(void (*all_tests)()) {
 }
 
 int main(int argc, char **argv) {
-
-    // Disable threading for testing (avoids precision issues)
-    // omp_set_dynamic(0);
-    // omp_set_num_threads(1);
     
     int c;
     while((c = getopt(argc, argv, "hu:")) != -1) {
@@ -91,7 +87,7 @@ int main(int argc, char **argv) {
     //
     if ((argc == 1) && (c == (-1))) { 
 
-        //read_reference_file("./reference.dat", &reference_vals);
+        read_reference_file("./reference.dat", &reference_vals);
         test_runner(all_tests);
     } 
 
